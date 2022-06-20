@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+:root{
+    --ss:1%;
+    --bg:#12a122;
+    --sm:15vw;
+}
+body{
+    background-color: var(--bg);
+}
+form{
+    margin: var(--sm);
+    padding: var(--ss);
+}

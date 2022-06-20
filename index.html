@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js add & search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form  onclick="event.preventDefault()">
+    <button onclick=" removeAllEntries(); display()"> reveal all data</button>
+    <label for="add" ><h2>add</h2></label>
+    <input type="text" id="add">
+    <button onclick="addToDB()"><h3>add</h3></button>
+    <label for="find"><h2>find</h2></label>
+    <input type="text" id="find">
+    <button onclick="searchDB()"><h3>find</h3></button>
+    <button onclick="removeAllEntries()" id="clr">clear field</button>
+<ul id="results"></ul>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
