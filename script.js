@@ -5,24 +5,24 @@ const miscData = ["black", "purple", "gold"];
 // })
 
 let addToDB = () => {
-    if (document.querySelector("#add").value == ""){
+    if (document.querySelector(".add").value == ""){
         document.querySelector("#results").innerHTML ="null entry detected"
     }else{
-    miscData.push(document.querySelector("#add").value);
+    miscData.push(document.querySelector(".add").value);
     document.querySelector("#results").innerHTML =
-    document.querySelector("#add").value + " ";
+    document.querySelector(".add").value + " ";
     console.log("add=true");    
 }
 };
 let searchDB = () => {
-    if (miscData.includes(document.querySelector("#find").value) == "" || miscData.includes(document.querySelector("#find").value) == false) {
+    if (miscData.includes(document.querySelector(".find").value) == "" || miscData.includes(document.querySelector(".find").value) == false) {
     
         document.querySelector("#results").innerHTML ="null search"
     }
     
   else {
     document.querySelector("#results").innerHTML =
-      document.querySelector("#find").value;
+      document.querySelector(".find").value;
   } 
   console.log("search=true");
 };
